@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecepcionDocumento>
+  <URI>
+    http://pruebasacepta1603.acepta.com/v01/2dfa312a3039be57043efc9
+    a9c4775fb9a20ac5a
+  </URI>
+  <ID>
+    <RUT_EMISOR>96919050</RUT_EMISOR>
+    <RUT_RECEPTOR>96919050</RUT_RECEPTOR>
+    <TIPO_DTE>33</TIPO_DTE>
+    <FOLIO>16</FOLIO>
+  </ID>
+  <XML_DTE>XXXXX</XML_DTE>
+  <PDF>XXXX</PDF>
+</RecepcionDocumento>

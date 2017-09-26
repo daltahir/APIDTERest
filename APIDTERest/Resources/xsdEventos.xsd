@@ -1,0 +1,18 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Evento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="TipoEvento"/>
+        <xs:element type="xs:int" name="RutEmisor"/>
+        <xs:element type="xs:int" name="RutReceptor"/>
+        <xs:element type="xs:int" name="TipoDTE"/>
+        <xs:element type="xs:int" name="Folio"/>
+        <xs:element type="xs:date" name="FechaEmision"/>
+        <xs:element type="xs:dateTime" name="FechaEvento"/>
+        <xs:element type="xs:anyURI" name="URI"/>
+        <xs:element type="xs:string" name="Descripcion_Evento"/>
+        <xs:element type="xs:string" name="Observacion"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
