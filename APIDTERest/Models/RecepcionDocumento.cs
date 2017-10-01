@@ -7,12 +7,11 @@ namespace APIDTERest.Models
 {
     public class RecepcionDocumento   
     {
-
-
         public string URI { get; set; }
         public cabecera ID { get; set; }
         public string XML_DTE { get; set; }
-        public string PDF { get; set; }
+        //public string PDF { get; set; }
+        public byte[] PDF { get; set; }
     }
     public class cabecera
     {
