@@ -58,6 +58,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -195,6 +196,10 @@
     <Compile Include="Models\RecepcionDocumento.cs" />
     <Compile Include="Models\Evento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wsRecepcionEventoSAP.asmx.cs">
+      <DependentUpon>wsRecepcionEventoSAP.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -204,6 +209,7 @@
     <Content Include="Connected Services\wsRefSAP\APIDTERest.wsRefSAP.ZBnmcMmRecepcionDteAceptaResponse1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="wsRecepcionEventoSAP.asmx" />
     <None Include="Connected Services\wsRefSAP\configuration91.svcinfo" />
     <None Include="Connected Services\wsRefSAP\configuration.svcinfo" />
     <None Include="Connected Services\wsRefSAP\Reference.svcmap">
