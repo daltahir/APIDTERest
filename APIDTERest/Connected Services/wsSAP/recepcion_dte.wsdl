@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:n1="urn:sap-com:document:sap:rfc:functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl" />
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char1">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char100">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="100" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char18">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="18" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char20">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char200">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="200" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char35">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="35" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char40">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="40" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char5">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="5" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char6">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="6" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char70">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="70" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char80">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="80" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema xmlns:n0="urn:sap-com:document:sap:rfc:functions" attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style">
+      <xsd:import namespace="urn:sap-com:document:sap:rfc:functions" />
+      <xsd:complexType name="ZebmncDetalleDte">
+        <xsd:sequence>
+          <xsd:element name="Nrolindet" type="n0:char4" />
+          <xsd:element name="Tpocodigo" type="n0:char10" />
+          <xsd:element name="Vlrcodigo" type="n0:char35" />
+          <xsd:element name="Indagente" type="n0:char1" />
+          <xsd:element name="Nmbitem" type="n0:char80" />
+          <xsd:element name="Qtyitem" type="n0:char18" />
+          <xsd:element name="Unmditem" type="n0:char4" />
+          <xsd:element name="Prcitem" type="n0:char18" />
+          <xsd:element name="Codimpadic" type="n0:char6" />
+          <xsd:element name="Montoitem" type="n0:char18" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TableOfZebmncDetalleDte">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZebmncDetalleDte" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ZBnmcMmRecepcionDteAcepta">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="IActeco" type="n0:char6" />
+            <xsd:element name="ICiudadrecep" type="n0:char20" />
+            <xsd:element name="ICmnaorigen" type="n0:char20" />
+            <xsd:element name="ICmnarecep" type="n0:char70" />
+            <xsd:element name="ICuidadorigen" type="n0:char20" />
+            <xsd:element name="IDirrecep" type="n0:char70" />
+            <xsd:element name="IFchemis" type="n0:char10" />
+            <xsd:element name="IFolio" type="n0:char10" />
+            <xsd:element name="IGiroemis" type="n0:char80" />
+            <xsd:element name="IGirorecep" type="n0:char40" />
+            <xsd:element name="IIva" type="n0:char18" />
+            <xsd:element name="IMntexe" type="n0:char18" />
+            <xsd:element name="IMntneto" type="n0:char18" />
+            <xsd:element name="IMnttotal" type="n0:char18" />
+            <xsd:element name="IMontoimp" type="n0:char18" />
+            <xsd:element name="IRutemisor" type="n0:char10" />
+            <xsd:element name="IRutrecep" type="n0:char10" />
+            <xsd:element name="IRznsoc" type="n0:char100" />
+            <xsd:element name="IRznsocrecep" type="n0:char100" />
+            <xsd:element name="ITasaimp" type="n0:char3" />
+            <xsd:element name="ITasaiva" type="n0:char5" />
+            <xsd:element name="ITipodte" type="n0:char3" />
+            <xsd:element name="ITipoimp" type="n0:char3" />
+            <xsd:element name="IUri" type="n0:char200" />
+            <xsd:element minOccurs="0" name="TDetalle" type="tns:TableOfZebmncDetalleDte" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ZBnmcMmRecepcionDteAceptaResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ECoderror" type="n0:char2" />
+            <xsd:element name="EMsgerror" type="n0:char100" />
+            <xsd:element name="ERutaPdf" type="n0:char100" />
+            <xsd:element name="TDetalle" type="tns:TableOfZebmncDetalleDte" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ZBnmcMmRecepcionDteAcepta">
+    <wsdl:part name="parameters" element="tns:ZBnmcMmRecepcionDteAcepta" />
+  </wsdl:message>
+  <wsdl:message name="ZBnmcMmRecepcionDteAceptaResponse">
+    <wsdl:part name="parameter" element="tns:ZBnmcMmRecepcionDteAceptaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Z_BNMC_MM_RECEPCION_DTE_ACEPTA">
+    <wsdl:operation name="ZBnmcMmRecepcionDteAcepta">
+      <wsdl:input message="tns:ZBnmcMmRecepcionDteAcepta" />
+      <wsdl:output message="tns:ZBnmcMmRecepcionDteAceptaResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Z_BNMC_MM_RECEPCION_DTE_ACEPTA" type="tns:Z_BNMC_MM_RECEPCION_DTE_ACEPTA">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ZBnmcMmRecepcionDteAcepta">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Z_BNMC_MM_RECEPCION_DTE_ACEPTA">
+    <wsdl:port name="Z_BNMC_MM_RECEPCION_DTE_ACEPTA" binding="tns:Z_BNMC_MM_RECEPCION_DTE_ACEPTA">
+      <soap:address location="http://sapcscdes.banmedica.cl:8000/sap/bc/srt/rfc/sap/z_bnmc_mm_recepcion_dte_acepta/100/z_bnmc_mm_recepcion_dte_acepta/z_bnmc_mm_recepcion_dte_acepta" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
