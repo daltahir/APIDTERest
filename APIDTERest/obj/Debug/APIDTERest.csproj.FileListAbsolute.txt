@@ -78,6 +78,6 @@ C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\bin\es\System.Web.Razor.resour
 C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\bin\es\System.Web.WebPages.resources.dll
 C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\obj\Debug\APIDTERest.csprojResolveAssemblyReference.cache
 C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\obj\Debug\APIDTERest.dll
 C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\obj\Debug\APIDTERest.pdb
+C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\obj\Debug\APIDTERest.csprojResolveAssemblyReference.cache

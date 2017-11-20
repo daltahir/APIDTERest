@@ -14,6 +14,11 @@ namespace APIDTERest.Models
             var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
             return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
         }
+        public static Byte[] Base64DecodeByte(string base64EncodedData)
+        {
+            Byte[] base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
+            return base64EncodedBytes;
+        }
 
         public static bool validarRut(string campoValidar)
         {

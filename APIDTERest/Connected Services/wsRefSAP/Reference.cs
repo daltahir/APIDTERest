@@ -46,6 +46,8 @@ namespace APIDTERest.wsRefSAP {
         
         private string iFchemisField;
         
+        private string iFchrecepField;
+        
         private string iFolioField;
         
         private string iGiroemisField;
@@ -81,6 +83,8 @@ namespace APIDTERest.wsRefSAP {
         private string iUriField;
         
         private ZebmncDetalleDte[] tDetalleField;
+        
+        private ZbmncDocreferencia[] tDocrefField;
         
         /// <comentarios/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -168,6 +172,18 @@ namespace APIDTERest.wsRefSAP {
         
         /// <comentarios/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string IFchrecep {
+            get {
+                return this.iFchrecepField;
+            }
+            set {
+                this.iFchrecepField = value;
+                this.RaisePropertyChanged("IFchrecep");
+            }
+        }
+        
+        /// <comentarios/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
         public string IFolio {
             get {
                 return this.iFolioField;
@@ -179,7 +195,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
         public string IGiroemis {
             get {
                 return this.iGiroemisField;
@@ -191,7 +207,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
         public string IGirorecep {
             get {
                 return this.iGirorecepField;
@@ -203,7 +219,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
         public string IIva {
             get {
                 return this.iIvaField;
@@ -215,7 +231,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
         public string IMntexe {
             get {
                 return this.iMntexeField;
@@ -227,7 +243,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
         public string IMntneto {
             get {
                 return this.iMntnetoField;
@@ -239,7 +255,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
         public string IMnttotal {
             get {
                 return this.iMnttotalField;
@@ -251,7 +267,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
         public string IMontoimp {
             get {
                 return this.iMontoimpField;
@@ -263,7 +279,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
         public string IRutemisor {
             get {
                 return this.iRutemisorField;
@@ -275,7 +291,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
         public string IRutrecep {
             get {
                 return this.iRutrecepField;
@@ -287,7 +303,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
         public string IRznsoc {
             get {
                 return this.iRznsocField;
@@ -299,7 +315,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
         public string IRznsocrecep {
             get {
                 return this.iRznsocrecepField;
@@ -311,7 +327,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
         public string ITasaimp {
             get {
                 return this.iTasaimpField;
@@ -323,7 +339,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
         public string ITasaiva {
             get {
                 return this.iTasaivaField;
@@ -335,7 +351,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
         public string ITipodte {
             get {
                 return this.iTipodteField;
@@ -347,7 +363,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
         public string ITipoimp {
             get {
                 return this.iTipoimpField;
@@ -359,7 +375,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
         public string IUri {
             get {
                 return this.iUriField;
@@ -371,7 +387,7 @@ namespace APIDTERest.wsRefSAP {
         }
         
         /// <comentarios/>
-        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
         [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
         public ZebmncDetalleDte[] TDetalle {
             get {
@@ -380,6 +396,19 @@ namespace APIDTERest.wsRefSAP {
             set {
                 this.tDetalleField = value;
                 this.RaisePropertyChanged("TDetalle");
+            }
+        }
+        
+        /// <comentarios/>
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+        public ZbmncDocreferencia[] TDocref {
+            get {
+                return this.tDocrefField;
+            }
+            set {
+                this.tDocrefField = value;
+                this.RaisePropertyChanged("TDocref");
             }
         }
         
@@ -556,6 +585,52 @@ namespace APIDTERest.wsRefSAP {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:sap-com:document:sap:soap:functions:mc-style")]
+    public partial class ZbmncDocreferencia : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codigoRefField;
+        
+        private string folioRefField;
+        
+        /// <comentarios/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string CodigoRef {
+            get {
+                return this.codigoRefField;
+            }
+            set {
+                this.codigoRefField = value;
+                this.RaisePropertyChanged("CodigoRef");
+            }
+        }
+        
+        /// <comentarios/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string FolioRef {
+            get {
+                return this.folioRefField;
+            }
+            set {
+                this.folioRefField = value;
+                this.RaisePropertyChanged("FolioRef");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <comentarios/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="urn:sap-com:document:sap:soap:functions:mc-style")]
     public partial class ZBnmcMmRecepcionDteAceptaResponse : object, System.ComponentModel.INotifyPropertyChanged {
         
@@ -566,6 +641,8 @@ namespace APIDTERest.wsRefSAP {
         private string eRutaPdfField;
         
         private ZebmncDetalleDte[] tDetalleField;
+        
+        private ZbmncDocreferencia[] tDocrefField;
         
         /// <comentarios/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -613,6 +690,19 @@ namespace APIDTERest.wsRefSAP {
             set {
                 this.tDetalleField = value;
                 this.RaisePropertyChanged("TDetalle");
+            }
+        }
+        
+        /// <comentarios/>
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("item", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+        public ZbmncDocreferencia[] TDocref {
+            get {
+                return this.tDocrefField;
+            }
+            set {
+                this.tDocrefField = value;
+                this.RaisePropertyChanged("TDocref");
             }
         }
         
