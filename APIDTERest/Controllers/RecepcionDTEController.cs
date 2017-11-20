@@ -136,13 +136,13 @@ namespace APIDTERest.Controllers
 
                     String pathPDF = response.ERutaPdf;
                     String nombreArchivo = pathPDF + value.ID.RUT_EMISOR + value.ID.TIPO_DTE + value.ID.FOLIO + ".pdf";
-                    /*
+                    
                     FileStream stream =
                     new FileStream(@nombreArchivo, FileMode.CreateNew);
                     System.IO.BinaryWriter writer =
                         new BinaryWriter(stream);
                     writer.Write(value.PDF, 0, value.PDF.Length);
-                    writer.Close();*/
+                    writer.Close();
 
                     result.Cod_Respuesta = response.ECoderror;
                     result.Desc_Respuesta = response.EMsgerror; 

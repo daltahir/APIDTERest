@@ -83,7 +83,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>10/24/2017 18:57:12</publishTime>
     </File>
     <File Include="bin/APIDTERest.dll">
-      <publishTime>11/17/2017 14:12:08</publishTime>
+      <publishTime>11/20/2017 10:43:16</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>10/24/2017 18:57:10</publishTime>
@@ -260,10 +260,10 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>10/24/2017 18:57:22</publishTime>
     </File>
     <File Include="Connected Services/wsRefSAP/APIDTERest.wsRefSAP.ZBnmcMmRecepcionDteAceptaResponse.datasource">
-      <publishTime>11/15/2017 15:18:03</publishTime>
+      <publishTime>11/17/2017 16:58:35</publishTime>
     </File>
     <File Include="Connected Services/wsRefSAP/APIDTERest.wsRefSAP.ZBnmcMmRecepcionDteAceptaResponse1.datasource">
-      <publishTime>11/15/2017 15:18:03</publishTime>
+      <publishTime>11/17/2017 16:58:35</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>10/24/2017 18:57:10</publishTime>
@@ -299,7 +299,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>10/24/2017 18:57:10</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>11/15/2017 18:04:48</publishTime>
+      <publishTime>11/17/2017 16:58:25</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>10/24/2017 18:57:10</publishTime>
@@ -1157,7 +1157,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>10/24/2017 18:57:10</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/17/2017 14:12:18</publishTime>
+      <publishTime>11/20/2017 10:09:57</publishTime>
     </File>
     <File Include="wsRecepcionEventoSAP.asmx">
       <publishTime>11/15/2017 09:40:07</publishTime>

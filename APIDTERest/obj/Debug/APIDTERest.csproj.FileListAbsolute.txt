@@ -80,4 +80,3 @@ C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\bin\es\System.Web.WebPages.Dep
 C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\bin\es\System.Web.WebPages.Razor.resources.dll
 C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\obj\Debug\APIDTERest.dll
 C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\obj\Debug\APIDTERest.pdb
-C:\Users\Diego\Source\Repos\APIDTERest\APIDTERest\obj\Debug\APIDTERest.csprojResolveAssemblyReference.cache
